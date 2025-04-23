@@ -7,7 +7,6 @@
   
   body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f9f9f9;
     color: #222;
     line-height: 1.6;
   }
@@ -55,7 +54,7 @@
   .container {
     text-align: center;
     margin: 40px 0 20px 0;
-    margin-bottom: 355px;
+    margin-bottom: 755px;
   }
   
   .container h1{
@@ -70,10 +69,11 @@
     object-fit: contain;
     border-radius: 16px;
     box-shadow: 0 2px 12px rgba(44, 62, 80, 0.10);
-    
+    object-fit: cover;
+    padding: 0px;
   }
 
-  .container:: ::after
+  .container::after
   {
     content: "";
     display: table;
