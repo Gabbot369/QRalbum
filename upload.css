@@ -244,3 +244,37 @@ h1 {
   color: #ff4d4f;
   outline: none;
 }
+
+.refreshBtn {
+    background-color: #4a90e2;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    user-select: none;
+  }
+  
+  .right-align {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+  }
+  
+  .refreshBtn:hover {
+    background-color: #4a90e2;
+  }
+  
+  .refreshBtn:active {
+    transform: translateY(1px);
+  }
+  
+  .refreshBtn.processing {
+    background-color: #3369ac;
+    cursor: not-allowed;
+  }
