@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Image and Video Upload</title>
+  <title>Photos and Videos Uploader</title>
   <link rel="stylesheet" href="upload.css" />
 </head>
 <body>
   <main class="container" role="main">
-    <h1>Media Uploader</h1>
+    <h1>QR Code Album <br> Media Uploader</h1>
 
     <section
       id="drop-area"
@@ -20,16 +20,19 @@
       <button id="fileSelectBtn" class="btn" aria-label="Select files to upload">
         Select Files
       </button>
-      <input
-        type="file"
-        id="fileElem"
-        multiple
-        accept="image/*,video/*"
-        hidden
-      />
+            <input 
+              type="file"
+              id="fileElem"
+              multiple
+              accept="image/*,video/*"
+              hidden
+            >
+            <div id="filePreview"></div>        
     </section>
-
     <section id="gallery" aria-live="polite" aria-label="Uploaded media preview"></section>
+    <div class="right-align">
+    <button class="refreshBtn" onclick="stealthRefresh()">Upload</button>
+    </div>
   </main>
 
 <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Media preview">
