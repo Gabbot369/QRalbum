@@ -184,3 +184,26 @@ document.addEventListener('keydown', (e) => {
     closeModal();
   }
 });
+
+function stealthRefresh() {
+    const btn = document.querySelector('.refreshBtn');
+    
+    // Disable and style button during processing
+    btn.classList.add('processing');
+    btn.disabled = true;
+    btn.textContent = 'Uploading...';
+    
+    // Add visual feedback
+    const originalText = btn.textContent;
+    let dots = 0;
+    const dotAnimation = setInterval(() => {
+      dots = (dots + 1) % 4;
+      btn.textContent = 'Uploading' + '.'.repeat(dots);
+    }, 500);
+  
+    // Delay and reload
+    setTimeout(() => {
+      clearInterval(dotAnimation);
+      location.reload();
+    }, 3000); // 3-second delay
+}
