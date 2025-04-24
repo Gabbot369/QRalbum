@@ -1,0 +1,42 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #1F1F22;
+  line-height: 1.6;
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.container {
+  align-items: center;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.container img {
+  height: 250px;
+  width: 250px;
+}
+
+.containher h1 {
+}
+
+.container button {
+  background-color: #42B562;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 14px rgba(120, 120, 120, 0.4);
+}
